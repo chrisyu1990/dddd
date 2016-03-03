@@ -1,0 +1,310 @@
+2016-02-15 14:39:33,063 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-02-15 14:39:33,089 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2016-02-15 14:39:33,166 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'create']
+2016-02-15 14:39:33,222 DEBUG    root            Running gcloud.compute.firewall-rules.create with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.firewall-rules.create', usage=None, description='*{command}* is used to create firewall rules to allow incoming\ntraffic to a network.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, allow=['tcp:8000'], cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f7d67f01c10>>, command_path=['gcloud', 'compute', 'firewall-rules', 'create'], configuration=None, description='dsf', document=None, endpoint=None, format=None, h=None, help=None, http_timeout=None, log_http=None, name='uouo', network='default', project=None, quiet=None, source_ranges=['0.0.0.0/0'], source_tags=['instance-1'], target_tags=[], trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-02-15 14:39:33,226 DEBUG    root            Starting batch request...
+2016-02-15 14:39:33,226 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.FirewallsService object at 0x7f7d67db6f90>, 'Insert', <ComputeFirewallsInsertRequest
+ firewall: <Firewall
+ allowed: [<AllowedValueListEntry
+ IPProtocol: 'tcp'
+ ports: ['8000']>]
+ description: 'dsf'
+ name: 'uouo'
+ network: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/networks/default'
+ sourceRanges: ['0.0.0.0/0']
+ sourceTags: ['instance-1']
+ targetTags: []>
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:33,227 DEBUG    root            Making batch request...
+2016-02-15 14:39:34,145 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:34,145 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:34,145 DEBUG    root            Starting batch request...
+2016-02-15 14:39:34,145 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:34,145 DEBUG    root            Making batch request...
+2016-02-15 14:39:34,365 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:34,365 DEBUG    root            Sleeping for 1s.
+2016-02-15 14:39:35,366 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:35,367 DEBUG    root            Starting batch request...
+2016-02-15 14:39:35,367 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:35,368 DEBUG    root            Making batch request...
+2016-02-15 14:39:35,563 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:35,563 DEBUG    root            Sleeping for 2s.
+2016-02-15 14:39:37,565 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:37,566 DEBUG    root            Starting batch request...
+2016-02-15 14:39:37,566 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:37,566 DEBUG    root            Making batch request...
+2016-02-15 14:39:37,802 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:37,802 DEBUG    root            Sleeping for 3s.
+2016-02-15 14:39:40,805 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:40,806 DEBUG    root            Starting batch request...
+2016-02-15 14:39:40,806 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:40,806 DEBUG    root            Making batch request...
+2016-02-15 14:39:41,029 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:41,029 DEBUG    root            Sleeping for 4s.
+2016-02-15 14:39:45,033 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:45,033 DEBUG    root            Starting batch request...
+2016-02-15 14:39:45,033 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:45,034 DEBUG    root            Making batch request...
+2016-02-15 14:39:45,249 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:45,249 DEBUG    root            Sleeping for 5s.
+2016-02-15 14:39:50,255 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:50,256 DEBUG    root            Starting batch request...
+2016-02-15 14:39:50,256 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:50,257 DEBUG    root            Making batch request...
+2016-02-15 14:39:50,466 DEBUG    root            Batch request done; responses [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:50,466 DEBUG    root            Sleeping for 6s.
+2016-02-15 14:39:55,471 DEBUG    root            Operations to inspect: [<Operation
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:55,471 DEBUG    root            Starting batch request...
+2016-02-15 14:39:55,472 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x7f7d67dd9610>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:39:55,472 DEBUG    root            Making batch request...
+2016-02-15 14:39:55,706 DEBUG    root            Batch request done; responses [<Operation
+ endTime: u'2016-02-15T06:39:50.976-08:00'
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:39:55,706 DEBUG    root            Sleeping for 7s.
+2016-02-15 14:40:00,711 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2016-02-15T06:39:50.976-08:00'
+ id: 3067150020830322122
+ insertTime: u'2016-02-15T06:39:33.944-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ operationType: u'insert'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/operations/operation-1455547173313-52bcffc3819e8-038fbc64-72714643'
+ startTime: u'2016-02-15T06:39:34.640-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9084336603377982922
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ user: u'48374425145-compute@developer.gserviceaccount.com'
+ warnings: []>]
+2016-02-15 14:40:00,713 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo].
+
+2016-02-15 14:40:00,713 DEBUG    root            Starting batch request...
+2016-02-15 14:40:00,713 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.FirewallsService object at 0x7f7d67db6f90>, 'Get', <ComputeFirewallsGetRequest
+ firewall: u'uouo'
+ project: 'ivanyuchattest'>)
+2016-02-15 14:40:00,714 DEBUG    root            Making batch request...
+2016-02-15 14:40:00,917 DEBUG    root            Batch request done; responses [<Firewall
+ allowed: [<AllowedValueListEntry
+ IPProtocol: u'tcp'
+ ports: [u'8000']>]
+ creationTimestamp: u'2016-02-15T06:39:33.845-08:00'
+ description: u'dsf'
+ id: 9084336603377982922
+ kind: u'compute#firewall'
+ name: u'uouo'
+ network: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/networks/default'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/ivanyuchattest/global/firewalls/uouo'
+ sourceRanges: [u'0.0.0.0/0']
+ sourceTags: [u'instance-1']
+ targetTags: []>]
+2016-02-15 14:40:00,918 DEBUG    root            Explict Display.
+2016-02-15 14:40:00,954 INFO     ___FILE_ONLY___ NAME NETWORK SRC_RANGES RULES    SRC_TAGS   TARGET_TAGS
+2016-02-15 14:40:00,954 INFO     ___FILE_ONLY___ 
+
+2016-02-15 14:40:00,954 INFO     ___FILE_ONLY___ uouo default 0.0.0.0/0  tcp:8000 instance-1
+2016-02-15 14:40:00,954 INFO     ___FILE_ONLY___ 
+

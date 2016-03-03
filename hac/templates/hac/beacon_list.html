@@ -1,0 +1,10 @@
+[
+{% for beacon in data %}
+    <div>
+    	<p>{{ beacon.asjson }}</p>
+    	{%if forloop.last == False%}
+    	 	<p>,<p>
+    	{% endif %}
+    </div>
+{% endfor %}
+]

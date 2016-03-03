@@ -1,0 +1,11 @@
+[
+{% for session in data %}
+    <div>
+    	<p>{{ session.asjson }}</p>
+    	{%if forloop.last == False%}
+    	 	<p>,<p>
+    	{% endif %}
+    </div>
+{% endfor %}
+]
+
