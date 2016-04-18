@@ -213,3 +213,13 @@ ls
 python manage.py runserver 0:8000
 ls
 screen
+ls
+mkdir static
+mv 1.png /static
+mv 1.png ./static
+ls
+screen
+ls
+cd hac
+ls
+vi models.py

@@ -3,6 +3,7 @@ from django.utils import timezone
 import datetime
 from django.core import serializers
 from django.contrib import admin
+import json
 
 class Attendee(models.Model):
 	name = models.CharField(max_length=200)
@@ -22,15 +23,14 @@ class Attendee(models.Model):
 #@admin.register(Attendee)
 #class AttendeeAdmin(admin.ModelAdmin):
 #	list_display = ('corpId') 
-
 class Speaker(models.Model):
 	name = models.CharField(max_length=200)
 	title = models.CharField(max_length=200)
-	imageUrl = models.CharField(max_length=40, default=None,blank=True, null=True)
+	imageUrl = models.CharField(max_length=2000, default=None,blank=True, null=True)
 	bio = models.TextField(default=None,blank=True, null=True)
 
 	def asjson(self):
-		return "{" + "\"name\" : \"" + self.name + "\"," + "\"title\":\"" + self.title + "\"," + "\"imageUrl\":\"" + self.imageUrl + "\","  + "\"bio\":\"" + self.bio + "\""+ "}"  
+		return "{" + "\"name\" : \"" + self.name + "\"," + "\"title\":\"" + self.title + "\"," + "\"imageUrl\":\"" + self.imageUrl + "\","  + "\"bio\":" + json.dumps(self.bio.replace('\n','/n')) + ""+ "}"  
 		
 	def __str__(self):
 		return self.name
@@ -84,7 +84,7 @@ class Session(models.Model):
 			blank=True, null=True)
 
 	def asjson(self):
-		return "{ \"eventName\" : \"" + self.title + "\"," + "\"description\" : \"" + self.details + "\"," + "\"date\" : \"" + self.date.strftime('%d-%m-%Y') + "\"" + self.location.asjson() + self.timeslot.asjson() + "," + "\"speaker\" : " + self.speaker.asjson() + "}"
+		return "{ \"eventName\" : \"" + self.title + "\"," + "\"description\" : "+ json.dumps(self.details.replace('/r/n', '').replace('/n','\n')) + "," + "\"date\" : \"" + self.date.strftime('%d-%m-%Y') + "\"" + self.location.asjson() + self.timeslot.asjson() + "," + "\"speaker\" : " + self.speaker.asjson() + "}"
 		# + self.location.asjson() + self.timeslot.asjson + "}"
 
 	def publish(self):
